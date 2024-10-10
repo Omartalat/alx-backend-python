@@ -13,4 +13,3 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """type-annotated function to_kv"""
     val = v * v
     return (k, val)
-
