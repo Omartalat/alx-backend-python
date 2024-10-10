@@ -6,10 +6,10 @@ The first element of the tuple is the string k.
 The second element is the square of the int/float v
 and should be annotated as a float.
 """
-from typing import Dict, Tuple
+from typing import Tuple, Union
 
 
-def to_kv(k: str, v: int | float) -> Tuple[str, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """type-annotated function to_kv"""
     val = v * v
     return (k, val)
