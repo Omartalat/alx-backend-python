@@ -4,7 +4,8 @@ This module contains an asynchronous function that waits for a random delay.
 
 Functions:
     task_wait_n(n: int, max_delay: int) -> List[float]:
-        Spawns `n` tasks that wait for a random delay up to `max_delay` seconds and returns a list of the delays in ascending order.
+        Spawns `n` tasks that wait for a random delay up to `max_delay`
+        seconds and returns a list of the delays in ascending order.
 """
 from typing import List
 

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-This module contains an asynchronous function that executes multiple coroutines concurrently.
+This module contains an asynchronous function that executes multiple coroutines
+concurrently.
 
 Functions:
     wait_n(n: int, max_delay: int) -> List[float]:
-        Executes the wait_random coroutine n times with a maximum delay of max_delay.
+        Executes the wait_random coroutine n times with
+        a maximum delay of max_delay.
         Returns a list of the delays (float) in the order they were executed.
 """
 from typing import List
