@@ -3,7 +3,7 @@
 This module contains an asynchronous coroutine that waits for a random delay.
 
 Functions:
-    wait_random(max_delay: int = 10) -> None:
+    wait_random(max_delay: int = 10) -> float:
         Asynchronous coroutine that waits for a random delay between 0 and
         max_delay seconds.
 """
@@ -11,7 +11,7 @@ import random
 import asyncio
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
     """
     Asynchronous function that waits for a random delay between 0
     and max_delay seconds.
