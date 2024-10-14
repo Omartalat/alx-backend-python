@@ -13,6 +13,15 @@ task_wait_random = __import__('3-tasks').task_wait_random
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
+    """
+    Executes multiple asynchronous tasks and returns
+    a list of their completion times.
+    Args:
+        n (int): The number of tasks to execute.
+        max_delay (int): The maximum delay for each task.
+    Returns:
+        List[float]: A sorted list of completion times for each task.
+    """
     _list: List[float] = []
 
     for _ in range(n):
