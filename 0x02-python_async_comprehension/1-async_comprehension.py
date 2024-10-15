@@ -6,11 +6,11 @@ async_generator and returns them.
 Returns:
     List[float]: A list of 10 random floating-point numbers.
 """
-from typing import AsyncGenerator
+from typing import Generator
 async_generator = __import__('0-async_generator').async_generator
 
 
-async def async_comprehension() -> AsyncGenerator[float, None]:
+async def async_comprehension() -> Generator[float, None, None]:
     """
     Asynchronously collects 10 random numbers using an async comprehending over
     a generator.
